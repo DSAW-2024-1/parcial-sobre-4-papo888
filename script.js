@@ -1,11 +1,11 @@
 function subscribe() {
     // Obtener el valor del correo electrónico
-    var emailInput = document.getElementById("email");
-    var email = emailInput.value;
-    var confirmedEmailSpan = document.getElementById("confirmed-email");
+    const emailInput = document.getElementById("email");
+    const email = emailInput.value;
+    const confirmedEmailSpan = document.getElementById("confirmed-email");
     confirmedEmailSpan.textContent = email;
     // Expresión regular para validar el formato del correo electrónico
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     // Verificar si el correo electrónico cumple con el formato esperado
     if (emailRegex.test(email)) {
         // El correo electrónico es válido
@@ -34,10 +34,10 @@ function dismissMessage() {
     // Ocultar el mensaje de éxito
     document.querySelector(".success-message").classList.add("hidden");
     // Obtener el ancho de la ventana del navegador
-    var windowWidth = window.innerWidth;
+    const windowWidth = window.innerWidth;
     // Obtener referencias a las imágenes
-    var imgMobile = document.querySelector(".img-mobile");
-    var imgDesktop = document.querySelector(".img-desktop");
+    const imgMobile = document.querySelector(".img-mobile");
+    const imgDesktop = document.querySelector(".img-desktop");
     
     if (windowWidth <= 768) {
         // Si la ventana es pequeña, mostrar la imagen móvil y ocultar la imagen de escritorio
